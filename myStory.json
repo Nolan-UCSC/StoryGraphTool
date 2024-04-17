@@ -1,31 +1,1430 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Your First Day at UCSC",
+    "Credits": "Created by Nolan Jensen, on a modified prgram by Adam Smith (amsmith@ucsc.edu).",
+    "InitialLocation": "Downtown",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Downtown": {
+            "Body": "You check the time, its time for class. Do you double check you have everything or do you head out the door with your backpack?",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "Go outside",
+                    "Target": "Go outside"
+                },
+                {
+                    "Text": "Double Check",
+                    "Target": "Double Check"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "Go outside": {
+            "Body": "You stand outside with your backpack, a little out of breath after running down your stairs",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Head back up",
+                    "Target": "Head back up"
                 },
                 {
-                    "Text": "South",
+                    "Text": "Go to the metro",
+                    "Target": "Go to the metro"
+                }
+            ]
+        },
+        "Double Check": {
+            "Body": "You open up your backpack and make sure you have everything, ahh you forgot your computer. you can't do class without that!",
+            "Choices": [
+                {
+                    "Text": "Grab the laptop",
+                    "Target": "Go outside"
+                },
+                {
+                    "Text": "Leave the laptiop",
+                    "Target": "Go outside"
+                }
+            ]
+        },
+        "Head back up": {
+            "Body": "You are now back in your room, although a little out of break after those stairs.",
+            "Choices": [
+                {
+                    "Text": "Go outside",
+                    "Target": "Go outside"
+                },
+                {
+                    "Text": "Double Check",
+                    "Target": "Double Check"
+                }
+            ]
+        },
+        "Go to the metro": {
+            "Body": "You stand infront of the metro center.",
+            "Choices": [
+                {
+                    "Text": "Enter your bus",
+                    "Target": "Enter your bus"
+                },
+                {
+                    "Text": "Go back home",
+                    "Target": "Go outside"
+                }
+            ]
+        },
+        "Enter your bus": {
+            "Body": "You are now on the 19 metro bus.",
+            "Choices": [
+                {
+                    "Text": "Get off",
+                    "Target": "Go to the metro"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "board walk"
+                }
+            ]
+        },
+        "board walk": {
+            "Body": "The bus stops at the board walk and then lets people in",
+            "Choices": [
+                {
+                    "Text": "Get off",
+                    "Target": "Get off 1"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "Dream in"
+                }
+            ]
+        },
+ 
+        "Get off 1": {
+            "Body": "You now stand by the baord walk",
+            "Choices": [
+                {
+                    "Text": "Wait for the next bus.",
+                    "Target": "wait 1"
+                }
+            ]
+        },
+        "wait 1": {
+            "Body": "The next bus is here",
+            "Choices": [
+                {
+                    "Text": "Get on",
+                    "Target": "backon1"
+                },
+                {
+                    "Text": "Wait for the next bus.",
+                    "Target": "wait 1"
+                }
+            ]
+        },
+        "backon1": {
+            "Body": "You are now on the 19 metro bus.",
+            "Choices": [
+                {
+                    "Text": "Get off",
+                    "Target": "board walk"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "Dream in"
+                }
+            ]
+        },
+ 
+        "Dream in": {
+            "Body": "The bus stops at the Dream Inn and then lets people in",
+            "Choices": [
+                {
+                    "Text": "Get off",
+                    "Target": "Get off 2"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "Base of Campus"
+                }
+            ]
+        },
+        "Get off 2": {
+            "Body": "You now stand by the Dream Inn.",
+            "Choices": [
+                {
+                    "Text": "Wait for the next bus.",
+                    "Target": "wait 2"
+                }
+            ]
+        },
+        "wait 2": {
+            "Body": "The next bus is here",
+            "Choices": [
+                {
+                    "Text": "Get on",
+                    "Target": "backon2"
+                },
+                {
+                    "Text": "Wait for the next bus.",
+                    "Target": "wait 2"
+                }
+            ]
+        },
+ 
+        "backon2": {
+            "Body": "You are now on the 19 metro bus.",
+            "Choices": [
+                {
+                    "Text": "Get off",
+                    "Target": "Dream in"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "Base of Campus"
+                }
+            ]
+        },
+ 
+        "Base of Campus": {
+            "Body": "The bus stops at the base of campus and then lets people in",
+            "Choices": [
+                {
+                    "Text": "Get off",
+                    "Target": "barn"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "Oakes"
+                }
+            ]
+        },
+        "barn": {
+            "Body": "You now stand by the barn at the base of campus",
+            "Choices": [
+                {
+                    "Text": "Wait for the next bus.",
+                    "Target": "backon3"
+                },
+                {
+                    "Text": "Check myUCSC",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+ 
+        "backon3": {
+            "Body": "You are now on the 19 metro bus.",
+            "Choices": [
+                {
+                    "Text": "Get off",
+                    "Target": "barn"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "Oakes"
+                }
+            ]
+        },
+        "myUCSC": {
+            "Body": "You open up your phone and check myUCSC",
+            "Choices": [
+                {
+                    "Text": "My Messages",
+                    "Target": "My Messages1"
+                },
+                {
+                    "Text": "Holds",
+                    "Target": "Holds1"
+                },
+                {
+                    "Text": "To do List/Tasks",
+                    "Target": "To do List/Tasks1"
+                },
+                {
+                    "Text": "Personal info",
+                    "Target": "Personal info1"
+                },
+                {
+                    "Text": "My Academics",
+                    "Target": "My Academics1"
+                },
+                {
+                    "Text": "Enrollment",
+                    "Target": "Enrollment1"
+                },
+                {
+                    "Text": "Class Schedule",
+                    "Target": "Class Schedule1"
+                },
+                {
+                    "Text": "Class Search",
+                    "Target": "Class Search1"
+                },
+                {
+                    "Text": "My Account",
+                    "Target": "My Account1"
+                },
+                {
+                    "Text": "Financial Aid",
+                    "Target": "Financial Aid1"
+                },
+                {
+                    "Text": "Get Help",
+                    "Target": "Get Help1"
+                },
+                {
+                    "Text": "Full Site",
+                    "Target": "Full Site1"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "barn"
+                }
+            ]
+        },
+
+        "My Messages1": {
+            "Body": "No current messages",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "Holds1": {
+            "Body": "No current holds",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "To do List/Tasks1": {
+            "Body": "Nothing to do",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "Personal info1": {
+            "Body": "Name: Nolan Jensen",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "My Academics1": {
+            "Body": "GPA 4.0000001",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "Enrollment1": {
+            "Body": "Unable to enroll in any classes error 624",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "Class Schedule1": {
+            "Body": "CMPM 120 at Classroom Unit 1",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "Class Search": {
+            "Body": "Unable to search due to scheduled matence",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "My Account1": {
+            "Body": "Online Loan Counseling",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "Financial Aid1": {
+            "Body": "MyAid Verify",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "Get Help1": {
+            "Body": "Error disable popups",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        "Full Site1": {
+            "Body": "To access the MyUCSC full site, log out and log back in with the 'Full Site Login' checkbox checked",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC"
+                }
+            ]
+        },
+        
+        "Oakes": {
+            "Body": "Oakes College, 19 metro now boarding.",
+            "Choices": [
+                {
+                    "Text": "Get Off",
+                    "Target": "Oakes2"
+                },
+                {
+                    "Text": "Next stop",
                     "Target": "Rachel Carson"
                 }
             ]
         },
+        
+        "myUCSC2": {
+            "Body": "You open up your phone and check myUCSC",
+            "Choices": [
+                {
+                    "Text": "My Messages",
+                    "Target": "My Messages2"
+                },
+                {
+                    "Text": "Holds",
+                    "Target": "Holds2"
+                },
+                {
+                    "Text": "To do List/Tasks",
+                    "Target": "To do List/Tasks2"
+                },
+                {
+                    "Text": "Personal info",
+                    "Target": "Personal info2"
+                },
+                {
+                    "Text": "My Academics",
+                    "Target": "My Academics2"
+                },
+                {
+                    "Text": "Enrollment",
+                    "Target": "Enrollment2"
+                },
+                {
+                    "Text": "Class Schedule",
+                    "Target": "Class Schedule2"
+                },
+                {
+                    "Text": "Class Search",
+                    "Target": "Class Search2"
+                },
+                {
+                    "Text": "My Account",
+                    "Target": "My Account2"
+                },
+                {
+                    "Text": "Financial Aid",
+                    "Target": "Financial Aid2"
+                },
+                {
+                    "Text": "Get Help",
+                    "Target": "Get Help2"
+                },
+                {
+                    "Text": "Full Site",
+                    "Target": "Full Site2"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "Oakes2"
+                }
+            ]
+        },
+
+        "My Messages2": {
+            "Body": "No current messages",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "Holds2": {
+            "Body": "No current holds",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "To do List/Tasks2": {
+            "Body": "Nothing to do",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "Personal info2": {
+            "Body": "Name: Nolan Jensen",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "My Academics2": {
+            "Body": "GPA 4.0000001",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "Enrollment2": {
+            "Body": "Unable to enroll in any classes error 624",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "Class Schedule2": {
+            "Body": "CMPM 120 at Classroom Unit 1",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "Class Search2": {
+            "Body": "Unable to search due to scheduled matence",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "My Account2": {
+            "Body": "Online Loan Counseling",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "Financial Aid2": {
+            "Body": "MyAid Verify",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "Get Help2": {
+            "Body": "Error disable popups",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+        "Full Site2": {
+            "Body": "To access the MyUCSC full site, log out and log back in with the 'Full Site Login' checkbox checked",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC2"
+                }
+            ]
+        },
+
         "Rachel Carson": {
+            "Body": "Rachel Carson College, 19 metro now boarding.",
+            "Choices": [
+                {
+                    "Text": "Get Off",
+                    "Target": "Rachel Carson2"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "Kresge"
+                }
+            ]
+        },
+        "myUCSC3": {
+            "Body": "You open up your phone and check myUCSC",
+            "Choices": [
+                {
+                    "Text": "My Messages",
+                    "Target": "My Messages3"
+                },
+                {
+                    "Text": "Holds",
+                    "Target": "Holds3"
+                },
+                {
+                    "Text": "To do List/Tasks",
+                    "Target": "To do List/Tasks3"
+                },
+                {
+                    "Text": "Personal info",
+                    "Target": "Personal info3"
+                },
+                {
+                    "Text": "My Academics",
+                    "Target": "My Academics3"
+                },
+                {
+                    "Text": "Enrollment",
+                    "Target": "Enrollment3"
+                },
+                {
+                    "Text": "Class Schedule",
+                    "Target": "Class Schedule3"
+                },
+                {
+                    "Text": "Class Search",
+                    "Target": "Class Search3"
+                },
+                {
+                    "Text": "My Account",
+                    "Target": "My Account3"
+                },
+                {
+                    "Text": "Financial Aid",
+                    "Target": "Financial Aid3"
+                },
+                {
+                    "Text": "Get Help",
+                    "Target": "Get Help3"
+                },
+                {
+                    "Text": "Full Site",
+                    "Target": "Full Site3"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "Rachel Carson2"
+                }
+            ]
+        },
+ 
+        "My Messages3": {
+            "Body": "No current messages",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "Holds3": {
+            "Body": "No current holds",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "To do List/Tasks3": {
+            "Body": "Nothing to do",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "Personal info3": {
+            "Body": "Name: Nolan Jensen",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "My Academics3": {
+            "Body": "GPA 4.0000003",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "Enrollment3": {
+            "Body": "Unable to enroll in any classes error 634",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "Class Schedule3": {
+            "Body": "CMPM 330 at Classroom Unit 3",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "Class Search3": {
+            "Body": "Unable to search due to scheduled maintenance",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "My Account3": {
+            "Body": "Online Loan Counseling",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "Financial Aid3": {
+            "Body": "MyAid Verify",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "Get Help3": {
+            "Body": "Error disable popups",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "Full Site3": {
+            "Body": "To access the MyUCSC full site, log out and log back in with the 'Full Site Login' checkbox checked",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC3"
+                }
+            ]
+        },
+        "Kresge": {
+            "Body": "This is Kresge College, 19 metro now boarding.",
+            "Choices": [
+                {
+                    "Text": "Get Off",
+                    "Target": "Kresge2"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "Science Hill"
+                }
+            ]
+        },
+        "myUCSC4": {
+            "Body": "You open up your phone and check myUCSC",
+            "Choices": [
+                {
+                    "Text": "My Messages",
+                    "Target": "My Messages4"
+                },
+                {
+                    "Text": "Holds",
+                    "Target": "Holds4"
+                },
+                {
+                    "Text": "To do List/Tasks",
+                    "Target": "To do List/Tasks4"
+                },
+                {
+                    "Text": "Personal info",
+                    "Target": "Personal info4"
+                },
+                {
+                    "Text": "My Academics",
+                    "Target": "My Academics4"
+                },
+                {
+                    "Text": "Enrollment",
+                    "Target": "Enrollment4"
+                },
+                {
+                    "Text": "Class Schedule",
+                    "Target": "Class Schedule4"
+                },
+                {
+                    "Text": "Class Search",
+                    "Target": "Class Search4"
+                },
+                {
+                    "Text": "My Account",
+                    "Target": "My Account4"
+                },
+                {
+                    "Text": "Financial Aid",
+                    "Target": "Financial Aid4"
+                },
+                {
+                    "Text": "Get Help",
+                    "Target": "Get Help4"
+                },
+                {
+                    "Text": "Full Site",
+                    "Target": "Full Site4"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "Kresge2"
+                }
+            ]
+        },
+ 
+ 
+        "My Messages4": {
+            "Body": "No current messages",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Holds4": {
+            "Body": "No current holds",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "To do List/Tasks4": {
+            "Body": "Nothing to do",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Personal info4": {
+            "Body": "Name: Nolan Jensen",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "My Academics4": {
+            "Body": "GPA 4.0000004",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Enrollment4": {
+            "Body": "Unable to enroll in any classes error 644",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Class Schedule4": {
+            "Body": "CMPM 440 at Classroom Unit 4",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Class Search4": {
+            "Body": "Unable to search due to scheduled maintenance",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "My Account4": {
+            "Body": "Online Loan Counseling",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Financial Aid4": {
+            "Body": "MyAid Verify",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Get Help4": {
+            "Body": "Error disable popups",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Full Site4": {
+            "Body": "To access the MyUCSC full site, log out and log back in with the 'Full Site Login' checkbox checked",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Science Hill": {
+            "Body": "Science Hill, 19 metro now boarding.",
+            "Choices": [
+                {
+                    "Text": "Get Off",
+                    "Target": "Science2"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "910"
+                }
+            ]
+        },
+ 
+        "Kresge2": {
+            "Body": "This is Kresge College, lots of nice trees.",
+            "Choices": [
+                {
+                    "Text": "South",
+                    "Target": "Porter2"
+                },
+                {
+                    "Text": "Check myUCSC",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Science2": {
+            "Body": "This is Science Hill, the sciences are nice here too.",
+            "Choices": [
+                {
+                    "Text": "Go back on",
+                    "Target": "Science Hill"
+                },
+                {
+                    "Text": "Check myUCSC",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "myUCSC5": {
+            "Body": "You open up your phone and check myUCSC",
+            "Choices": [
+                {
+                    "Text": "My Messages",
+                    "Target": "My Messages5"
+                },
+                {
+                    "Text": "Holds",
+                    "Target": "Holds5"
+                },
+                {
+                    "Text": "To do List/Tasks",
+                    "Target": "To do List/Tasks5"
+                },
+                {
+                    "Text": "Personal info",
+                    "Target": "Personal info5"
+                },
+                {
+                    "Text": "My Academics",
+                    "Target": "My Academics5"
+                },
+                {
+                    "Text": "Enrollment",
+                    "Target": "Enrollment5"
+                },
+                {
+                    "Text": "Class Schedule",
+                    "Target": "Class Schedule5"
+                },
+                {
+                    "Text": "Class Search",
+                    "Target": "Class Search5"
+                },
+                {
+                    "Text": "My Account",
+                    "Target": "My Account5"
+                },
+                {
+                    "Text": "Financial Aid",
+                    "Target": "Financial Aid5"
+                },
+                {
+                    "Text": "Get Help",
+                    "Target": "Get Help5"
+                },
+                {
+                    "Text": "Full Site",
+                    "Target": "Full Site5"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "Science Hill"
+                }
+            ]
+        },
+ 
+ 
+        "My Messages5": {
+            "Body": "No current messages",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "Holds5": {
+            "Body": "No current holds",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "To do List/Tasks5": {
+            "Body": "Nothing to do",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "Personal info5": {
+            "Body": "Name: Nolan Jensen",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "My Academics5": {
+            "Body": "GPA 5.0000005",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "Enrollment5": {
+            "Body": "Unable to enroll in any classes error 655",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "Class Schedule5": {
+            "Body": "CMPM 550 at Classroom Unit 5",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "Class Search5": {
+            "Body": "Unable to search due to scheduled maintenance",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "My Account5": {
+            "Body": "Online Loan Counseling",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "Financial Aid5": {
+            "Body": "MyAid Verify",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "Get Help5": {
+            "Body": "Error disable popups",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+        "Full Site5": {
+            "Body": "To access the MyUCSC full site, log out and log back in with the 'Full Site Login' checkbox checked",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC5"
+                }
+            ]
+        },
+
+        "910": {
+            "Body": "College 9 and JRL, currently closed",
+            "Choices": [
+                {
+                    "Text": "Next stop",
+                    "Target": "Cowell"
+                }
+            ]
+        },
+        "Cowell": {
+            "Body": "Cowell College, the first college",
+            "Choices": [
+                {
+                    "Text": "Next stop",
+                    "Target": "Base of Campus2"
+                },
+                {
+                    "Text": "Get Off",
+                    "Target": "Cowell2"
+                }
+            ]
+        },
+        "Base of Campus2": {
+            "Body": "The bus stops at the base of campus and then lets people in",
+            "Choices": [
+                {
+                    "Text": "Get off",
+                    "Target": "barn"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "board walk2"
+                }
+            ]
+        },
+        "board walk2": {
+            "Body": "After a long ride the bus stops at the board walk and then lets people in",
+            "Choices": [
+                {
+                    "Text": "Get off",
+                    "Target": "Get off 1"
+                },
+                {
+                    "Text": "Next stop",
+                    "Target": "Go to the metro"
+                }
+            ]
+        },
+        "Cowell2": {
+            "Body": "Cowell College, the first college",
+            "Choices": [
+                {
+                    "Text": "Get on Bus",
+                    "Target": "Cowell"
+                },
+                {
+                    "Text": "Go to classroom unit",
+                    "Target": "classroom"
+                }
+            ]
+        },
+        "classroom": {
+            "Body": "Welcome to Classroom unit",
+            "Choices": [
+                {
+                    "Text": "Go to Classroom unit 1",
+                    "Target": "Unit1"
+                },
+                {
+                    "Text": "Go to Classroom unit 2",
+                    "Target": "Unit2"
+                },
+                {
+                    "Text": "Go back to the bus stop",
+                    "Target": "Cowell2"
+                },
+                {
+                    "Text": "Check myUCSC",
+                    "Target": "myUCSC6"
+                }
+ 
+            ]
+        },
+        "Unit1": {
+            "Body": "You've made it to class",
+            "Choices": [
+                {
+                    "Text": "You forgot your laptop",
+                    "Target": "classroom"
+                },
+                {
+                    "Nolan": "Open your laptop",
+                    "Target": "Beyond"
+                }
+            ]
+        },
+        "Unit2": {
+            "Body": "You enter an empty classroom",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "classroom"
+                }
+            ]
+        },
+        "myUCSC6": {
+            "Body": "You open up your phone and check myUCSC",
+            "Choices": [
+                {
+                    "Text": "My Messages",
+                    "Target": "My Messages6"
+                },
+                {
+                    "Text": "Holds",
+                    "Target": "Holds6"
+                },
+                {
+                    "Text": "To do List/Tasks",
+                    "Target": "To do List/Tasks6"
+                },
+                {
+                    "Text": "Personal info",
+                    "Target": "Personal info6"
+                },
+                {
+                    "Text": "My Academics",
+                    "Target": "My Academics6"
+                },
+                {
+                    "Text": "Enrollment",
+                    "Target": "Enrollment6"
+                },
+                {
+                    "Text": "Class Schedule",
+                    "Target": "Class Schedule6"
+                },
+                {
+                    "Text": "Class Search",
+                    "Target": "Class Search6"
+                },
+                {
+                    "Text": "My Account",
+                    "Target": "My Account6"
+                },
+                {
+                    "Text": "Financial Aid",
+                    "Target": "Financial Aid6"
+                },
+                {
+                    "Text": "Get Help",
+                    "Target": "Get Help6"
+                },
+                {
+                    "Text": "Full Site",
+                    "Target": "Full Site6"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "classroom"
+                }
+            ]
+        },
+        "My Messages6": {
+            "Body": "No current messages",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "Holds6": {
+            "Body": "No current holds",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "To do List/Tasks6": {
+            "Body": "Nothing to do",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "Personal info6": {
+            "Body": "Name: Nolan Jensen",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "My Academics6": {
+            "Body": "GPA 6.0000006",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "Enrollment6": {
+            "Body": "Unable to enroll in any classes error 666",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "Class Schedule6": {
+            "Body": "CMPM 660 at Classroom Unit 6",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "Class Search6": {
+            "Body": "Unable to search due to scheduled maintenance",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "My Account6": {
+            "Body": "Online Loan Counseling",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "Financial Aid6": {
+            "Body": "MyAid Verify",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "Get Help6": {
+            "Body": "Error disable popups",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+        "Full Site6": {
+            "Body": "To access the MyUCSC full site, log out and log back in with the 'Full Site Login' checkbox checked",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "myUCSC6"
+                }
+            ]
+        },
+ 
+        "Porter2": {
+            "Body": "This is Porter College, the trees are nice here too.",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Kresge2"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Rachel Carson2"
+                },
+                {
+                    "Text": "Check myUCSC",
+                    "Target": "myUCSC4"
+                }
+            ]
+        },
+        "Rachel Carson2": {
             "Body": "Rachel Carson College, more sun and fewer trees.",
             "Choices": [
                 {
@@ -35,24 +1434,42 @@
                 {
                     "Text": "South",
                     "Target": "Oakes"
+                },
+                {
+                    "Text": "Get on bus",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "Check myUCSC",
+                    "Target": "myUCSC3"
                 }
             ]
         },
-        "Oakes": {
+        "Oakes2": {
             "Body": "Oakes College, even the buildings have tree bark on them.",
             "Choices": [
                 {
                     "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Target": "Rachel Carson2"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Get on bus",
+                    "Target": "Oakes"
+                },
+                {
+                    "Text": "Check myUCSC",
+                    "Target": "myUCSC2"
                 }
+
+
             ]
         },
+        
+ 
+ 
+ 
         "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+            "Body": "Welcome to CMPM 120"
         }
     }
 }
